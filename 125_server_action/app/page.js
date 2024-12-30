@@ -1,5 +1,5 @@
 'use client'
-import Image from "next/image";
+// import Image from "next/image";
 // import fs from "fs/promises"
 import { useRef } from "react";
 import { submitAction } from "@/actions/form";
@@ -19,7 +19,7 @@ export default function Home() {
           <input name="add" id="add" className="text-black" type="text"/>
         </div>
         <div>
-          <button className="border border-2 border-red-400 bg-green-800">Submit</button>
+          <button className=" border-2 border-red-400 bg-green-800">Submit</button>
         </div>
       </form>
     </div>
