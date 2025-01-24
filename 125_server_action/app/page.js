@@ -1,12 +1,11 @@
 'use client'
 // import Image from "next/image";
-// import fs from "fs/promises"
+
 import { useRef } from "react";
 import { submitAction } from "@/actions/form";
 
 export default function Home() {
   let ref=useRef();
-
   return (
     <div>
       <form ref={ref} action={(e)=>{submitAction(e); ref.current.reset()}}>
