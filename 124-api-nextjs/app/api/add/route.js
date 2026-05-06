@@ -9,7 +9,12 @@ import { NextResponse } from "next/server";
 //     return NextResponse.json({success:true,data:data})
 // }
 
+//Request Come to Next.js Server
+// Because -> fetch("/api/add") matches with (app/api/add/route.js)
+
+// STEP 5 — Backend Receives Request
 export async function POST(request){
+    // STEP 6 — Reading Request Body
     let data=await request.json();
     return NextResponse.json({success:true, data})
 }
